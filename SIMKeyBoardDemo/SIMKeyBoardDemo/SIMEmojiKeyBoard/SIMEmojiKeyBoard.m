@@ -88,7 +88,7 @@
         CGFloat Y;
         Y = SIMEmojKeyBoardUIScreenHeight - CGRectGetHeight(rect) - CGRectGetHeight(inputFunctionViewRect);
         if (SIMEmojKeyBoardiPhoneX && rect.size.height == 0) {
-            Y = SIMEmojKeyBoardUIScreenHeight - CGRectGetHeight(rect) - CGRectGetHeight(inputFunctionViewRect);
+            Y = SIMEmojKeyBoardUIScreenHeight - CGRectGetHeight(rect) - CGRectGetHeight(inputFunctionViewRect)-SIMEmojKeyBoardkBottomNOSafeArea_Height;
         }
         if (rect.size.height == 0) {
             weakSelf.faceView.hidden = YES;
